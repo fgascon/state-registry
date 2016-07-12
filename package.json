@@ -1,0 +1,23 @@
+{
+  "name": "state-registry",
+  "version": "0.0.0",
+  "description": "Immutable application state registry",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgascon/state-registry.git"
+  },
+  "keywords": [
+    "state",
+    "immutable"
+  ],
+  "author": "fgascon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fgascon/state-registry/issues"
+  },
+  "homepage": "https://github.com/fgascon/state-registry#readme",
+  "dependencies": {
+    "immutability-helper": "^2.0.0"
+  }
+}

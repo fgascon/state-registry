@@ -1,0 +1,13 @@
+{
+    "preset": "airbnb",
+    "validateIndentation": 4,
+    "disallowSpacesInFunctionExpression": false,
+    "disallowSpacesInAnonymousFunctionExpression": false,
+    "disallowNewlineBeforeBlockStatements": true,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "maximumLineLength": 250,
+    "requireDollarBeforejQueryAssignment": false
+}
