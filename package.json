@@ -1,6 +1,6 @@
 {
   "name": "state-registry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Immutable application state registry",
   "main": "index.js",
   "repository": {
