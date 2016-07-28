@@ -15,7 +15,7 @@ proto.addChangeListener = function (listener) {
 };
 
 proto.removeChangeListener = function (listener) {
-    const index = this.changeListeners.indexOf(listener);
+    var index = this.changeListeners.indexOf(listener);
     if (index >= 0) {
         this.changeListeners.splice(index, 1);
     }
@@ -30,8 +30,8 @@ proto.commitChanges = function () {
         return;
     }
 
-    const oldState = this.state;
-    const newState = this.pendingChanges.reduce(this.updateContext, oldState);
+    var oldState = this.state;
+    var newState = this.pendingChanges.reduce(this.updateContext, oldState);
     this.pendingChanges = [];
 
     if (newState !== oldState) {
