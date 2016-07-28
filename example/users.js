@@ -1,7 +1,7 @@
 'use strict';
-const StateRegistry = require('../');
+var StateRegistry = require('../');
 
-const appState = new StateRegistry({
+var appState = new StateRegistry({
     users: [],
 });
 
@@ -14,9 +14,9 @@ appState.extendUpdate('$arrayRemove', function (value, newObject, spec, object) 
         throw new Error('$arrayRemove expected value to be an array');
     }
 
-    let originalValue = newObject === object ? object.slice() : newObject;
+    var originalValue = newObject === object ? object.slice() : newObject;
     value.forEach(function (item) {
-        let index;
+        var index;
         while ((index = originalValue.indexOf(item)) >= 0) {
             if (originalValue === object) {
                 originalValue = originalValue.slice();
@@ -65,11 +65,11 @@ function removeUserById(id) {
     });
 }
 
-const user1 = {
+var user1 = {
     id: 1,
     name: 'User #1',
 };
-const user2 = {
+var user2 = {
     id: 2,
     name: 'User #2',
 };
